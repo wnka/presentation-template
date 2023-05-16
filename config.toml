@@ -1,0 +1,29 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = ["reveal-hugo"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
+[author]
+name = "You"
+
+# choose between Hugo compile-time or Highlight.js
+# syntax highlighting for code inside of code fences
+[markup.highlight]
+codeFences = false  # use highlight.js
+# codeFences = true  # use hugo highlighting at compile time
+style = "tango"  # set a style for hugo highlighting
+
+[params.reveal_hugo]
+history = true
+custom_theme = "reveal-hugo/themes/robot-lung.css"
+slide_number = true
+margin = 0.2
+controls = false
